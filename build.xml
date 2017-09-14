@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="EPP Object" basedir="." default="dist">
+	<property name="dist" location="dist" />
+	<property name="build" location="bin" />
+	<property name="jarfile" value="epp-object" />
+
+	<target name="dist" description="generate the distribution">
+		<mkdir dir="${dist}" />
+		<jar destfile="${dist}/${jarfile}.jar" basedir="${build}" />
+	</target>
+</project>
+
